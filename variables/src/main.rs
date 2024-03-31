@@ -1,26 +1,32 @@
-const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-
 fn main() {
-    // constants
-    println!("the value of const THREE_HOURS_IN_SECONDS is: {THREE_HOURS_IN_SECONDS}");
+    constants();
+    mutable_variables();
+    shadowing();
+    integer_types();
+    floating_point_types();
+    numeric_operations();
+}
 
-    // mutable variable
-    let mut x = 5;
-    println!("the value of x is: {x}");
-    x = 6;
-    println!("the value of x is: {x}");
+fn numeric_operations() {
+    let sum = 5 + 10;
+    let difference = 95.5 - 4.3;
+    let product = 4 * 30;
+    let quotient = 56.7 / 32.2;
+    let truncated = -5 / 3;
+    let remainder = 43 % 5;
 
-    // shadowing
-    let y = 5;
-    let y = y + 1;
-    {
-        let y = y * 2;
-        println!("the value of y in the inner scope is: {y}");
-    }
+    println!("sum: {sum}, difference: {difference}, product: {product}");
+    println!("quotient: {quotient}, truncated: {truncated}, remainder: {remainder}");
+}
 
-    println!("the value of y is: {y}");
+fn floating_point_types() {
+    let f64 = 2.0;
+    let f32: f32 = 3.0;
 
-    // integer types
+    println!("f64: {f64}, f32: {f32}");
+}
+
+fn integer_types() {
     let decimal = 98_222;
     let hex = 0xff;
     let octal = 0o77;
@@ -32,21 +38,27 @@ fn main() {
     println!(
         "binary: {binary}, byte: {byte}, integer_with_type_suffix: {integer_with_type_suffix}"
     );
+}
 
-    // floating point types
-    let f64 = 2.0;
-    let f32: f32 = 3.0;
+fn shadowing() {
+    let y = 5;
+    let y = y + 1;
+    {
+        let y = y * 2;
+        println!("the value of y in the inner scope is: {y}");
+    }
 
-    println!("f64: {f64}, f32: {f32}");
+    println!("the value of y is: {y}");
+}
 
-    // numeric operations
-    let sum = 5 + 10;
-    let difference = 95.5 - 4.3;
-    let product = 4 * 30;
-    let quotient = 56.7 / 32.2;
-    let truncated = -5 / 3;
-    let remainder = 43 % 5;
+fn mutable_variables() {
+    let mut x = 5;
+    println!("the value of x is: {x}");
+    x = 6;
+    println!("the value of x is: {x}");
+}
 
-    println!("sum: {sum}, difference: {difference}, product: {product}");
-    println!("quotient: {quotient}, truncated: {truncated}, remainder: {remainder}");
+fn constants() {
+    const MAX_POINTS: u32 = 100_000;
+    println!("the value of const MAX_POINTS is: {MAX_POINTS}");
 }
