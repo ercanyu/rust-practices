@@ -32,4 +32,21 @@ fn main() {
     println!(
         "binary: {binary}, byte: {byte}, integer_with_type_suffix: {integer_with_type_suffix}"
     );
+
+    // floating point types
+    let f64 = 2.0;
+    let f32: f32 = 3.0;
+
+    println!("f64: {f64}, f32: {f32}");
+
+    // numeric operations
+    let sum = 5 + 10;
+    let difference = 95.5 - 4.3;
+    let product = 4 * 30;
+    let quotient = 56.7 / 32.2;
+    let truncated = -5 / 3;
+    let remainder = 43 % 5;
+
+    println!("sum: {sum}, difference: {difference}, product: {product}");
+    println!("quotient: {quotient}, truncated: {truncated}, remainder: {remainder}");
 }
