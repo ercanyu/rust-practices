@@ -18,5 +18,18 @@ fn main() {
         println!("the value of y in the inner scope is: {y}");
     }
 
-    println!("the value of y is: {y}")
+    println!("the value of y is: {y}");
+
+    // integer types
+    let decimal = 98_222;
+    let hex = 0xff;
+    let octal = 0o77;
+    let binary = 0b1111_0000;
+    let byte = b'A';
+    let integer_with_type_suffix = 42u32;
+
+    println!("decimal: {decimal}, hex: {hex}, octal: {octal}");
+    println!(
+        "binary: {binary}, byte: {byte}, integer_with_type_suffix: {integer_with_type_suffix}"
+    );
 }
