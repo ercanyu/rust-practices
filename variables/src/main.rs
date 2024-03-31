@@ -7,6 +7,23 @@ fn main() {
     numeric_operations();
     boolean_type();
     character_type();
+    tuple_type();
+}
+
+fn tuple_type() {
+    let tuple: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tuple;
+    println!("x in tuple: {x}, y in tuple: {y}, z in tuple: {z}");
+
+    let five_hundred = tuple.0;
+    let six_point_four = tuple.1;
+    let one = tuple.2;
+
+    println!("five_hundred: {five_hundred},six_point_four: {six_point_four}, one: {one}");
+
+    let unit = ();
+    let _ = unit;
+    println!("a tuple without any values has a special name: unit");
 }
 
 fn character_type() {
