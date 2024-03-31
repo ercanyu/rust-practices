@@ -4,7 +4,31 @@ fn main() {
     another_function();
     function_with_parameters(5);
     print_labeled_measurement('h', 10);
+    expression_example();
 
+    let x = five();
+    println!("The value returned from five() is: {x}");
+
+    let y = plus_one(12);
+    println!("The value returned from plus_one(12) is: {y}");
+
+    let z = plus_one_with_return_keyword(12);
+    println!("The value returned from plus_one_with_return_keyword(12) is: {z}");
+}
+
+fn plus_one_with_return_keyword(x: i32) -> i32 {
+    return x + 1;
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
+
+fn five() -> i32 {
+    5
+}
+
+fn expression_example() {
     /*
     expressions do not include ending semicolons,
     if you add a semicolon to the end of an expression,
