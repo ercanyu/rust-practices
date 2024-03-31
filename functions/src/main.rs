@@ -4,8 +4,12 @@ fn main() {
     another_function();
     function_with_parameters(5);
     print_labeled_measurement('h', 10);
-    expression_example();
 
+    expressions();
+    functions_with_return_values();
+}
+
+fn functions_with_return_values() {
     let x = five();
     println!("The value returned from five() is: {x}");
 
@@ -28,7 +32,7 @@ fn five() -> i32 {
     5
 }
 
-fn expression_example() {
+fn expressions() {
     /*
     expressions do not include ending semicolons,
     if you add a semicolon to the end of an expression,
