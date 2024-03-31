@@ -8,6 +8,38 @@ fn main() {
     boolean_type();
     character_type();
     tuple_type();
+    array_type();
+}
+
+fn array_type() {
+    let array = [1, 2, 3, 4, 5];
+    let first = array[0];
+    println!("first element of array is: {first}");
+
+    let months = [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+    ];
+    let third_month = months[2];
+    println!("third month is: {third_month}");
+
+    let array_with_type: [i32; 5] = [1, 2, 3, 4, 5];
+    let array_with_type_and_initial_value = [3; 5];
+    let first_element = array_with_type[0];
+    let first_element_in_array_with_initial_value = array_with_type_and_initial_value[0];
+
+    println!("first element in array_with_type is: {first_element}");
+    println!("first element in array_with_type_and_initial_value is: {first_element_in_array_with_initial_value}");
 }
 
 fn tuple_type() {
