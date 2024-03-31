@@ -34,9 +34,9 @@ fn array_type() {
     println!("third month is: {third_month}");
 
     let array_with_type: [i32; 5] = [1, 2, 3, 4, 5];
-    let array_with_type_and_initial_value = [3; 5];
+    let array_with_initial_value = [3; 5];
     let first_element = array_with_type[0];
-    let first_element_in_array_with_initial_value = array_with_type_and_initial_value[0];
+    let first_element_in_array_with_initial_value = array_with_initial_value[0];
 
     println!("first element in array_with_type is: {first_element}");
     println!("first element in array_with_type_and_initial_value is: {first_element_in_array_with_initial_value}");
