@@ -5,6 +5,24 @@ fn main() {
     integer_types();
     floating_point_types();
     numeric_operations();
+    boolean_type();
+    character_type();
+}
+
+fn character_type() {
+    let char_z = 'z';
+    let char_heart: char = '❤';
+    let char_emoji_heart_eyed_cat = '😻';
+    println!(
+        "char_z: {char_z}, char_heart: {char_heart}, char_emoji_heart_eyed_cat: {char_emoji_heart_eyed_cat}"
+    );
+}
+
+fn boolean_type() {
+    let t = true;
+    let f: bool = false;
+
+    println!("t: {t}, f: {f}");
 }
 
 fn numeric_operations() {
